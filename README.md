@@ -1,50 +1,59 @@
-# Email Spam Detection Using Machine Learning
+# Email Spam Detection with Machine Learning
 
-Welcome to the Car Price Estimation Tool! This web application utilizes a machine learning model to estimate car prices based on various features. Users can input car details, and the tool will generate a price estimate. In addition, the tool provides visualizations to explore the relationships between numeric features and car prices.
+This is a simple web application that utilizes machine learning to classify emails into two categories:
+
+- Spam: Unwanted and unsolicited emails sent in bulk.
+- Ham: Legitimate and desired emails that users expect.
+
+## Getting Started
+
+To run this application locally, follow these steps:
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/SamZadbuke/oibsip_task4.git
+   cd email-spam-detection
+   ```
+
+2. Install the required libraries:
+
+   ```bash
+   pip install pandas streamlit scikit-learn
+   ```
+
+3. Download the email dataset (e.g., "email_spam.csv") and place it in the same directory as the Python script.
+
+4. Run the application:
+
+   ```bash
+   streamlit run email_spam_detection.py
+   ```
+
+The web application will open in your default web browser.
 
 ## Features
 
-- **Data Preprocessing:** The application loads and preprocesses the car price dataset, including one-hot encoding of categorical features.
-
-- **Machine Learning Model:** It uses a Random Forest Regressor to predict car prices.
-
-- **Visualization:** Users can visualize how numeric features correlate with car prices using scatter plots.
-
-- **Prediction:** After inputting car details, the tool provides a predicted car price based on the trained model.
-
-## How to Use
-
-1. Clone this repository to your local machine.
-
-2. Install the required libraries if you haven't already:
-   ```
-   pip install pandas streamlit scikit-learn matplotlib
-   ```
-
-3. Run the Streamlit app:
-   ```
-   streamlit run app.py
-   ```
-
-4. Open the application in your web browser, and you'll see the Car Price Estimation Tool.
-
-5. Enter car details, including numeric features and select categorical features from the dropdowns.
-
-6. Click the "Predict" button to see the estimated car price.
+- Display the accuracy of the Naive Bayes classifier.
+- Show a bar chart with the count of Spam and Ham emails in the dataset.
+- Allow users to test an email for spam by entering text and clicking the "Predict" button.
+- Display the prediction result (spam or not spam) for the input text.
 
 ## Dependencies
 
+- Python 3.6+
 - pandas
 - streamlit
 - scikit-learn
-- matplotlib
 
-## Project Structure
+## Usage
 
-- `app.py`: The main Streamlit application script.
-- `car_price.csv`: The dataset containing car price and features.
-- `README.md`: This README file.
+1. Upon running the application, you will see a title and a brief description of what the tool does.
 
-## Acknowledgments
+2. The accuracy of the Naive Bayes classifier on the dataset is displayed at the top of the page.
 
-This project is for educational purposes and demonstrates how to create a simple web application for car price estimation using machine learning and Streamlit.
+3. A bar chart shows the count of Spam and Ham emails in the dataset.
+
+4. You can test an email for spam by entering text in the provided text area and clicking the "Predict" button. The prediction (spam or not spam) will be displayed below.
+
+
