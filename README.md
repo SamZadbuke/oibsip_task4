@@ -13,7 +13,7 @@ To run this application locally, follow these steps:
 
    ```bash
    git clone https://github.com/SamZadbuke/oibsip_task4.git
-   cd email-spam-detection
+   cd oibsip_task4
    ```
 
 2. Install the required libraries:
