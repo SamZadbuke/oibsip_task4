@@ -1,4 +1,4 @@
-# Car Price Estimation Tool
+# Email Spam Detection Using Machine Learning
 
 Welcome to the Car Price Estimation Tool! This web application utilizes a machine learning model to estimate car prices based on various features. Users can input car details, and the tool will generate a price estimate. In addition, the tool provides visualizations to explore the relationships between numeric features and car prices.
 
